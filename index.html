@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Avatar Adventure</title>
+</head>
+<body>
+    <header>
+        <h1>Adventure of the Avatar</h1>
+    </header>
+    <main>
+        <div id="story-text">Welcome to the Avatar Adventure!</div>
+        <div id="choices">
+            <button id="choice-btn">Choose</button>
+        </div>
+        <div id="image-section">
+            <img id="story-image" src="Avataar.jpg" alt="AvatarImage"></img>
+        </div>
+        <button id="restart-btn" onclick="startGame()">Restart</button>
+    </main>
+    <!-- Addendum section -->
+    <section id="addendum">
+        <h2>Addendum</h2>
+        <p>
+            In developing this Avatar Adventure, my goal was to offer an immersive and participatory journey for players. This entailed delineating story phases, crafting decision points that shape the plot, and integrating interpersonal interactions to enrich the overall experience of the adventure.
+        </p>
+        <p>
+            In the process of selecting visuals, shaping the storyline, and designing the user interface, we made deliberate creative decisions. Every aspect, from the imagery to the narrative to the interface, was meticulously chosen to foster immersion and maintain player engagement in the plot.
+        </p>
+        <p>
+            We faced various hurdles, including the need to balance the intricacies of branching storylines and ensure smooth transitions between stages. These obstacles were successfully tackled through a process of iterative testing and fine-tuning of the JavaScript code.
+        </p>
+        <p>
+            Discoveries made throughout this journey underscore the significance of upholding a cohesive storyline while also accommodating player autonomy. The interactive dynamics inherent in the 'Choose Your Own Adventure' genre necessitate meticulous planning to guarantee an enjoyable user journey.
+        </p>
+    </section>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
